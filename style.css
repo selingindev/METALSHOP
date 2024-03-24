@@ -62,7 +62,7 @@ nav{
   list-style: none;
   margin: 0 1.2em 0 0;
   background-color: #ffffff04;
-  border-radius: 0.5em;
+  border-radius: 0.9em;
   padding: 0.4em;
 }
 .linksNav ul a{
@@ -79,14 +79,14 @@ nav{
 }
 
 #carrinho img{
-  height: 2.2em;
-  width: 2.4rem;
+  height: 2.4em;
+  width: 2.6rem;
   opacity: 0.7;
   transition: 0.2s;
 }
 #carrinho img:hover{
-  height: 2.3em;
-  width: 2.5rem;
+  height: 2.5em;
+  width: 2.7rem;
   opacity: 1;
 }
 
@@ -183,33 +183,56 @@ nav{
 #sectionBeneficios{
   width: 100vw;
   height: 65vh;
-  background-color: #8B0019 ;
+  border: 1px solid rgba(0, 0, 0, 0.256);
   display: flex;
-  justify-content: space-around ;
+  justify-content: space-evenly ;
   align-items: center;
 }
 
 .containerBeneficios{
-  width: 18em;
-  height: 55vh;
+  width: 16.5em;
+  height: 60vh;
   border: 1px solid black;
-  display: block;
+  display:f
 }
 
-.containerImage{
+.imgBeneficios{
   border: 1px solid black;
-  width: 2em;
-  height: 4em;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.imgContainer{
+  margin: 1em 0 0 0;
+  width: 10em;
+  height: 10em;
+  background-color: #d4d4d4;
+  border-radius: 6em;
+}
+
+.imgContainer img{
+
+}
+
+.textBeneficios{
+  border: 1px solid black;
+  width: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.containerImage img{}
+.textContainer{
+  width: 90%;
+  height: 90%;
+  border: 1px solid black;  
+}
 
-.textBeneficios{}
-
-.textBeneficios p{}
+.textContainer p{}
 
 
 
