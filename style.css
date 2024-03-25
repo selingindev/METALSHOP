@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     background-color: #D9D9D9;
+
 }
 .invisible{
   height: 7.5em;
@@ -163,29 +164,28 @@ margin: auto;
 }
 .contentImage{
   width: 30%;
-  height: 95%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .contentImage img{
-  height: 100%;
-  width: 100%;
+  height: 99%;
+  width: 99%;
 }
 .contentText{
   display: flex;
-  align-items: center;
   width: 70%;
-  height: 95%;
+  align-items: center;
+  height: 100%;
   text-align: justify;
-  overflow: auto;
-  border-left:none ;
 }
 
 .contentText p {
-  padding: 1rem;
-  font-size: 2.2rem;
-  max-width: 100%;
+  height: 100%;
+  padding: 0 1em;
+  font-size: 2.26em;
+  width: 100%;
 }
 /* FIM ARTIGO*/
 
@@ -281,7 +281,7 @@ margin: auto;
 /*fim beneficios*/
 
 #products{
-  width: 100vw;
+  width: 120%;
   height: 40vw;
   display: flex;
   align-items: center;
@@ -290,21 +290,36 @@ margin: auto;
 
 .carrossel{
   z-index: 0;
-  width: 2020px;
+  width:100vw ;
+  max-width: 150%;
   height: 40vw;
   background-color: #b5b1b18a;
   position: absolute;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between ;
+  scroll-behavior: smooth;
+  align-items: center;
+}
+.products::-webkit-scrollbar {
+  display: none;
+}
+
+
+.leftBtn{ 
+  font-size: 8em;
+  width: 30em;
+  height: 3em;
+  z-index: 5;
+  cursor: pointer;;
+
 }
 
 .containerCarrossel{
-  overflow-x: hidden;
   display: flex;
   border: 1px solid black;
-  width: 30%;
-  position: relative;
+  width: 4em;
   height: 80%;
+  position: relative;
   background-color: #8B0019;
 }
 /* Media query para telas menores que 600px (tipicamente telas de smartphones) */

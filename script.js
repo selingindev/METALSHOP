@@ -18,3 +18,12 @@
     });
   });
   
+ function direcao(e){
+  direcao = document.querySelector("carrossel")
+
+  if(e == 1){
+    direcao.scrollLeft = direcao.scrollLeft + 200;
+  } else if(e == 2){
+    direcao.scrollLeft = direcao.scrollLeft - 200
+  } 
+}
