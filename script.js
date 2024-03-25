@@ -17,13 +17,46 @@
       });
     });
   });
-  
- function direcao(e){
-  direcao = document.querySelector("carrossel")
 
-  if(e == 1){
-    direcao.scrollLeft = direcao.scrollLeft + 200;
-  } else if(e == 2){
-    direcao.scrollLeft = direcao.scrollLeft - 200
-  } 
+var sliders = document.querySelector(".carrossel"); 
+var btnEsquerdo = document.querySelectorAll(".leftBtn");
+var btnDireito = document.querySelectorAll(".rigthBtn")
+var scrollClick = 200; // Valor para o scroll
+var scrollInterval;
+var scrollAmount = 0;
+
+function carrosselEsquerda() {
+  sliders.scrollLeft -= scrollClick;
+  if (sliders.scrollLeft < 0) {
+    sliders.scrollLeft = 0;
+  }
 }
+
+function carrosselDireita() {
+  sliders.scrollLeft += scrollClick;
+  if (sliders.scrollLeft >= (sliders.scrollWidth - sliders.clientWidth)) {
+    sliders.scrollLeft = sliders.scrollWidth - sliders.clientWidth;
+    sliders.scrollLeft = 0;
+  }
+}
+
+function startAutomaticScroll() {
+  scrollInterval = setInterval(carrosselDireita, 3500); // Inicia o scroll automático a cada 2 segundos
+}
+
+function stopAutomaticScroll() {
+  clearInterval(scrollInterval);
+}
+
+// Inicia o scroll automático quando a página carregar
+window.addEventListener('load', startAutomaticScroll);
+
+// Pára o scroll automático quando o mouse passar por cima do carrossel
+sliders.addEventListener('mouseenter', stopAutomaticScroll);
+
+
+// Retoma o scroll automático quando o mouse sair do carrossel
+sliders.addEventListener('mouseleave', startAutomaticScroll);
+
+
+
