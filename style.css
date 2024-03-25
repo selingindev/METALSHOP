@@ -24,6 +24,7 @@ header{
   justify-content: center;
   text-align: center;
   position: fixed;
+  z-index: 10;
 }    
 header p{
   font-size: 0.9em;
@@ -35,7 +36,6 @@ nav{
   background-color: #8B0019 ;
   display: flex;
   justify-content: space-between;
-  z-index: 10;
 }
 
 .logoNav{
@@ -282,9 +282,31 @@ margin: auto;
 
 #products{
   width: 100vw;
-  height: 30vw;
+  height: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.carrossel{
+  z-index: 0;
+  width: 2020px;
+  height: 40vw;
+  background-color: #b5b1b18a;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+
+.containerCarrossel{
+  overflow-x: hidden;
+  display: flex;
+  border: 1px solid black;
+  width: 30%;
+  position: relative;
+  height: 80%;
+  background-color: #8B0019;
+}
 /* Media query para telas menores que 600px (tipicamente telas de smartphones) */
 @media (max-width: 450px) {
       
