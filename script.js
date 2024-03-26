@@ -1,5 +1,5 @@
 
- document.querySelectorAll(".linksNav ul li").forEach(function(item) {
+   document.querySelectorAll(".linksNav ul li").forEach(function(item) {
     item.addEventListener("mouseover", function() {
       // Quando o hover é ativado, adiciona uma classe 'not-hover' a todos os outros itens
       document.querySelectorAll(".linksNav ul li").forEach(function(otherItem) {
@@ -18,6 +18,7 @@
     });
   });
 
+
 var sliders = document.querySelector(".carrossel"); 
 var btnEsquerdo = document.querySelectorAll(".leftBtn");
 var btnDireito = document.querySelectorAll(".rigthBtn")
@@ -33,12 +34,15 @@ function carrosselEsquerda() {
 }
 
 function carrosselDireita() {
-  sliders.scrollLeft += scrollClick;
-  if (sliders.scrollLeft >= (sliders.scrollWidth - sliders.clientWidth)) {
-    sliders.scrollLeft = sliders.scrollWidth - sliders.clientWidth;
-    sliders.scrollLeft = 0;
+  if (sliders.scrollLeft >= (sliders.scrollWidth - sliders.clientWidth - scrollClick)) {
+    sliders.scrollLeft = 0; // Volta para o início
+  } else {
+    sliders.scrollLeft += scrollClick;
   }
 }
+
+
+
 
 function startAutomaticScroll() {
   scrollInterval = setInterval(carrosselDireita, 3500); // Inicia o scroll automático a cada 2 segundos
@@ -54,9 +58,6 @@ window.addEventListener('load', startAutomaticScroll);
 // Pára o scroll automático quando o mouse passar por cima do carrossel
 sliders.addEventListener('mouseenter', stopAutomaticScroll);
 
-
 // Retoma o scroll automático quando o mouse sair do carrossel
 sliders.addEventListener('mouseleave', startAutomaticScroll);
-
-
 

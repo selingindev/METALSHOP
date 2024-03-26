@@ -186,6 +186,7 @@ margin: auto;
   width: 70%;
   align-items: center;
   height: 100%;
+  max-height: 100%;
   text-align: justify;
 }
 
@@ -243,13 +244,13 @@ margin: auto;
 }
 
 #containerPop{
-  width: 12em;
-  height: 12em;
+  width: 11em;
+  height: 11em;
 }
 
 #pop{
-  width: 12em;
-  height: 12em;
+  width: 11em;
+  height: 11em;
 }
 
 .titleBeneficio{
@@ -295,7 +296,6 @@ margin: auto;
   display: flex;
   justify-content:center;
   align-items: center;
-  background-color: #e903038a;
 }
 
 .carrossel{
@@ -309,8 +309,9 @@ margin: auto;
 }
 
 .leftBtn, .rigthBtn{ 
+  color: rgb(0, 0, 0);
   width: 10%;
-  font-size: 9em;
+  font-size: 5em;
   z-index: 3;
 }
 
@@ -325,26 +326,53 @@ margin: auto;
   right: -20px;
   display: flex;
   justify-content: start;
-
   position: absolute;
 }
 
 .containerCarrossel{
   transition: 2ms;
-  border: 1px solid black;
   width: 100%;
   margin: 1em;
   height: 80%;
   position: relative;
-  background-color: #b46b78;
-
 }
 
 .containerProduct{
-  margin: 2em;
-  width: 20.2vw;
-  height: 200px;
-  background-color: #8B0019;
+  border: 1px solid black;
+  margin: 1.5em;
+  width: 21vw;
+  height: 58vh;
+}
+
+.containerFoto{
+  width: 100%;
+  height: 45%;
+}
+
+.containerFoto img{
+  width: 100%;
+  height: 100%;
+}
+
+.sobreProduct{
+  width: 100%;
+  height: 55%;
+}
+.titleProduto{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.valor{
+  height: 30%;
+  width: 100%;
+}
+.comprar{
+  height: 40%;
+  width: 100%;
 }
 /* Media query para telas menores que 600px (tipicamente telas de smartphones) */
 @media (max-width: 450px) {
