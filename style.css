@@ -292,7 +292,7 @@ margin: auto;
 
 #products{
   width: 100vw;
-  height: 60vw;
+  height: 38vw;
   max-width: 100%;
   display: flex;
   justify-content:center;
@@ -419,6 +419,65 @@ margin: auto;
   cursor: pointer;
 }
 
+
+#atleta{
+  width: 100vw;
+  height: 75vh;
+  margin: 1em; 
+  }
+
+.titleAtleta{
+  font-size: 3em;
+  height: 15%;
+  margin: 0 0 1em 0;
+  display: flex;
+  justify-content: center;
+  color: #8B0019;
+  
+}
+
+.videoAbout{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+video{
+  width: 45%;
+  height: 90%;
+}
+.sobreAtleta{
+  width: 45%;
+
+  height: 100%;
+}
+
+.nome{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  font-size: 2em;
+  color: #8B0019;
+}
+
+.desc{
+  padding: 0.8em;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  text-align:center;
+}
+
+.desc p{
+  font-size: 2.5em;
+}
+
+#sktmetal{
+  color: #8B0019;
+}
 
 /* Media query para telas menores que 600px (tipicamente telas de smartphones) */
 @media (max-width: 450px) {
