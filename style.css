@@ -224,6 +224,7 @@ margin: auto;
   height: 50%;
   display: inline-block;
   text-align: center;  
+  margin-top: 1em;
 }
 
 .imgContainer{
@@ -280,10 +281,10 @@ margin: auto;
 
 .textContainer p{
   display: flex;
-  align-items: center;
+  align-items: start;
   height: 100%;
   width: 100%;
-  font-size: 1.3em;
+  font-size: 1.5em;
   text-align: center;  
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -291,7 +292,7 @@ margin: auto;
 
 #products{
   width: 100vw;
-  height: 40vw;
+  height: 60vw;
   max-width: 100%;
   display: flex;
   justify-content:center;
@@ -299,20 +300,25 @@ margin: auto;
 }
 
 .carrossel{
-  width:80%;
+  width:85vw;
   height: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
   align-items: center;
+  margin-left: 1.5em ;
 }
 
 .leftBtn, .rigthBtn{ 
+  
   color: rgb(0, 0, 0);
-  width: 10%;
+  width: 5%;
+  height: 50%;
   font-size: 5em;
   z-index: 3;
+  display: flex;
+  align-items:start;
 }
 
 
@@ -332,48 +338,88 @@ margin: auto;
 .containerCarrossel{
   transition: 2ms;
   width: 100%;
-  margin: 1em;
+  margin: 0.8em;
   height: 80%;
   position: relative;
 }
 
 .containerProduct{
-  border: 1px solid black;
-  margin: 1.5em;
-  width: 21vw;
-  height: 58vh;
+  margin: 0 3em 0 0;
+  width: 17.5vw;
+  height: 60vh;
+  text-align: center;
+  background-color:#8B0019;
+  border-radius: 0.8em;
 }
 
 .containerFoto{
   width: 100%;
-  height: 45%;
+  height: 40%;
+  
 }
 
 .containerFoto img{
   width: 100%;
   height: 100%;
+  border-radius: 0.5em;
+  border: 1px solid black;
 }
 
 .sobreProduct{
   width: 100%;
-  height: 55%;
+  height: 60%;
+  border-radius: 0.5em;
 }
 .titleProduto{
-  height: 30%;
+  height: 35%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.8em;
+  font-family:fantasy;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+  color: white;
 }
 
 .valor{
+  height: 35%;
+  width: 100%;
+  font-family:fantasy;
+  font-size: 2.5em;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  color: rgb(60, 190, 60);
+}
+
+.valor p{
+  width: 100%;
+}
+
+
+.buttonComprar{
   height: 30%;
-  width: 100%;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+ 
 }
+
 .comprar{
-  height: 40%;
-  width: 100%;
+  border-radius: 1em;
+  width: 80%;
+  height: 70%;
+  font-family: fantasy;
+  border: none;
+  background-color:#88586131;
+  font-size: 2em;
+  color: #ffffff;
+  cursor: pointer;
 }
+
+
 /* Media query para telas menores que 600px (tipicamente telas de smartphones) */
 @media (max-width: 450px) {
       

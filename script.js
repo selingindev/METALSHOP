@@ -45,7 +45,7 @@ function carrosselDireita() {
 
 
 function startAutomaticScroll() {
-  scrollInterval = setInterval(carrosselDireita, 3500); // Inicia o scroll automático a cada 2 segundos
+  scrollInterval = setInterval(carrosselDireita, 1500); // Inicia o scroll automático a cada 2 segundos
 }
 
 function stopAutomaticScroll() {
