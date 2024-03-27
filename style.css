@@ -217,6 +217,7 @@ margin: auto;
   width: 16.5em;
   height: 69vh;
   border-radius: 0.7em;
+  margin: 1em 0 1em;
 }
 
 .imgBeneficios{
@@ -423,7 +424,7 @@ margin: auto;
 #atleta{
   width: 100vw;
   height: 75vh;
-  margin: 1em; 
+  margin: 3em 1em; 
   }
 
 .titleAtleta{
@@ -444,6 +445,7 @@ margin: auto;
 }
 
 video{
+  padding: 1em;
   width: 45%;
   height: 90%;
 }
@@ -477,6 +479,99 @@ video{
 
 #sktmetal{
   color: #8B0019;
+}
+/*article*/
+#contact{
+  margin: 1em 0.5em;
+  width: 100%;
+  height: 60vh;  
+  display: flex;
+  justify-content: space-around;
+}
+
+.containerAbout{
+  width: 50%;
+  height: 100%;
+}
+
+.aboutName{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  font-size: 3em;
+  align-items: center;
+}
+.containerText{
+  width: 60%;
+  padding: 0.2em;
+  font-size: 2.5em;
+  width: 100%;
+}
+
+/*fimarticle*/
+
+
+/*footer*/
+footer{
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #353434f6;
+  }
+
+.socialMedia{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.socialMedia ul{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.4em;
+  justify-content: space-between;
+}
+
+
+.socialMedia ul li, .manualUser ul li{
+  color: white;
+  font-size: 1.2em;
+  width: 100%;
+}
+
+.logoFooter{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logoFooter img{
+  width: 12vw;
+  height: 100%;
+}
+.manualUser{
+  height: 100%;
+  width: 30%; 
+
+}
+
+.manualUser ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: end;
+  justify-content: space-between;
+  list-style: none;
+  text-align: end;
+  padding: 0.4em;
+  padding-right:1.5em;
 }
 
 /* Media query para telas menores que 600px (tipicamente telas de smartphones) */
