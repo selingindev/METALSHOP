@@ -288,16 +288,18 @@
         </div>
         <aside id="email">
             <div class="titleForm">
-                <h2>CONTATE NOS</h2>
+                <h2>CONTATE-NOS</h2>
             </div>
-            <form action="GET">
-                <label for="">
-                    <input type="email" name="email" id="email">
-                </label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-
-                <input type="submit" value="ENVIAR">
-            </form>
+            <div class="contact-form">
+                <form>
+                    <input type="text" name="name" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu email" required>
+                    <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                    <div class="btnContact">
+                        <button type="submit">Enviar</button>
+                    </div>    
+                </form>
+            </div>
         </aside>
     </article>
     <footer>

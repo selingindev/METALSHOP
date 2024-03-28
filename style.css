@@ -1,127 +1,128 @@
 *{
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Adicionar overflow-x onde necessário */
 .scrollable-content {
-  overflow-x: auto; /* ou scroll */
+overflow-x: auto; /* ou scroll */
 }
 
 /* Remover overflow-x globalmente */
 body {
-  overflow-x: hidden;
+overflow-x: hidden;
 
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    background-color: #D9D9D9;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #D9D9D9;
 
 }
 .invisible{
-  height: 7.5em;
-  width: 100vw;
-  visibility: hidden;
+height: 7.5em;
+width: 100vw;
+visibility: hidden;
 }
 
 header{
-  background-color: black;
-  width: 100%;
-  height: 1.3em;
-  color: #fff;
-  justify-content: center;
-  text-align: center;
-  position: fixed;
-  z-index: 10;
+background-color: black;
+width: 100%;
+height: 1.3em;
+color: #fff;
+justify-content: center;
+text-align: center;
+position: fixed;
+z-index: 10;
 }    
 header p{
-  font-size: 0.9em;
+font-size: 0.9em;
 }
 
 nav{
-  width: 100%;
-  height: 6.2em;
-  background-color: #8B0019 ;
-  display: flex;
-  justify-content: space-between;
+width: 100%;
+height: 6.2em;
+background-color: #8B0019 ;
+display: flex;
+justify-content: space-between;
 }
 
 .logoNav{
-  height: 100%;
-  width: 10em;
+height: 100%;
+width: 10em;
 }
 
 .logoNav img{
-  width: 62%;
-  height: 100%;
+width: 62%;
+height: 100%;
 }
 
 
 .linksNav{
-  width: 55rem;
-  max-width: 60em;
-  display: flex;
-  justify-content:end;
-  align-items: center;
+width: 55rem;
+max-width: 60em;
+display: flex;
+justify-content:end;
+align-items: center;
+margin: 0 1.5em;
 }
 
 .linksNav ul{
-  display: flex;
-  height: 80%;
-  width: 70%;
-  max-width: 70%;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0 1.2em 0 0;
-  background-color: #ffffff04;
-  border-radius: 0.9em;
-  padding: 0.4em;
+display: flex;
+height: 80%;
+width: 70%;
+max-width: 70%;
+align-items: center;
+justify-content: space-between;
+list-style: none;
+margin: 0 1.2em 0 0;
+background-color: #ffffff04;
+border-radius: 0.9em;
+padding: 0.4em;
 }
 .linksNav ul a{
-  text-decoration: none;
-  margin: 1em;
+text-decoration: none;
+margin: 1em;
 }
 .linksNav ul li{
-  color: #ffffff;
-  font-size: 1.4rem;
-  transition: 0.5s;
+color: #ffffff;
+font-size: 1.4rem;
+transition: 0.5s;
 }
 
 .linksNav ul li.not-hover {
-  font-size: 1.4rem;
-  opacity: 0.6;
-  transition: 0.5s;
+font-size: 1.4rem;
+opacity: 0.6;
+transition: 0.5s;
 }
 
 #carrinho img{
-  height: 2.4em;
-  width: 2.6rem;
-  opacity: 0.7;
-  transition: 0.2s;
+height: 2.4em;
+width: 2.6rem;
+opacity: 0.7;
+transition: 0.2s;
 }
 #carrinho img:hover{
-  height: 2.5em;
-  width: 2.7rem;
-  opacity: 1;
+height: 2.5em;
+width: 2.7rem;
+opacity: 1;
 }
 
 /* fim nav*/
 
 #sectionBanner {
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
+width: 100vw;
+height: 80vh;
+display: flex;
+justify-content: center;
+align-items: center; 
 }
 
 .banner {
-  width: 100vw;
-  height: 75vh;
-  display: inline-flexbox;
-  justify-content: center;
+width: 100vw;
+height: 75vh;
+display: inline-flexbox;
+justify-content: center;
 }
 
 .title{
@@ -130,24 +131,24 @@ margin: auto;
 }
 
 .title h1{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 5.5em;
+display: flex;
+justify-content: center;
+width: 100%;
+height: 5.5em;
 }
 .title img {
-  height: 5em;
-  width: 90%;
+height: 5em;
+width: 90%;
 }
 
 .bannerImage{
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
 }
 
 .bannerImage img{
-  height: 55vh;
-  width: 90vw;
+height: 55vh;
+width: 90vw;
 }
 
 /*fim home*/
@@ -155,358 +156,411 @@ margin: auto;
 /*começo article*/
 
 #sobreArticle{
-  width: 100vw;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
+width: 100vw;
+height: 60vh;
+display: flex;
+justify-content: center;
 }
 
 .containerSobre{
-  margin: auto;
-  width: 95%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0.5em;
+margin: auto;
+width: 95%;
+height: 100%;
+display: flex;
+align-items: center;
+padding: 0.5em;
 
 }
 .contentImage{
-  width: 30%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+width: 30%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .contentImage img{
-  height: 99%;
-  width: 99%;
+height: 99%;
+width: 99%;
 }
 .contentText{
-  display: flex;
-  width: 70%;
-  align-items: center;
-  height: 100%;
-  max-height: 100%;
-  text-align: justify;
+display: flex;
+width: 70%;
+align-items: center;
+height: 100%;
+max-height: 100%;
+text-align: justify;
 }
 
 .contentText p {
-  height: 100%;
-  padding: 0 1em;
-  font-size: 2.26em;
-  width: 100%;
+height: 100%;
+padding: 0 1em;
+font-size: 2.26em;
+width: 100%;
 }
 /* FIM ARTIGO*/
 
 /*inicio beneficios*/
 #sectionBeneficios{
-  margin: 2em 0 0 0;
-  width: 100vw;
-  height: 69vh;
-  border: 1px solid rgba(0, 0, 0, 0.256);
-  border-left: 0;
-  border-right  : 0;
-  display: flex;
-  justify-content: space-evenly ;
-  align-items: center;
-  color: white;
-  background-color: #8b0019e6;
+margin: 2em 0 0 0;
+width: 100vw;
+height: 69vh;
+border: 1px solid rgba(0, 0, 0, 0.256);
+border-left: 0;
+border-right  : 0;
+display: flex;
+justify-content: space-evenly ;
+align-items: center;
+color: white;
+background-color: #8b0019e6;
 }
 
 .containerBeneficios{
-  width: 16.5em;
-  height: 69vh;
-  border-radius: 0.7em;
-  margin: 1em 0 1em;
+width: 16.5em;
+height: 69vh;
+border-radius: 0.7em;
+margin: 1em 0 1em;
 }
 
 .imgBeneficios{
-  width: 100%;
-  height: 50%;
-  display: inline-block;
-  text-align: center;  
-  margin-top: 1em;
+width: 100%;
+height: 50%;
+display: inline-block;
+text-align: center;  
+margin-top: 1em;
 }
 
 .imgContainer{
-  margin: 1em auto;
-  width: 11em;
-  height: 11em;
-  background-color: #ffffff;
-  border-radius: 15em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+margin: 1em auto;
+width: 11em;
+height: 11em;
+background-color: #ffffff;
+border-radius: 15em;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .imgContainer img{
-  width: 12em;
-  height: 12em;
-  border-radius: 15em;
+width: 12em;
+height: 12em;
+border-radius: 15em;
 }
 
 #containerPop{
-  width: 11em;
-  height: 11em;
+width: 11em;
+height: 11em;
 }
 
 #pop{
-  width: 11em;
-  height: 11em;
+width: 11em;
+height: 11em;
 }
 
 .titleBeneficio{
-  width: 100%;
-  height: 2.2em;
-  margin-top: 2em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+width: 100%;
+height: 2.2em;
+margin-top: 2em;
+border-bottom: 1px solid rgba(0, 0, 0, 0.103);
 }
 
 .titleBeneficio h2{
-  width: 100%;
+width: 100%;
 }
 
 
 .textBeneficios{
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
+width: 100%;
+height: 50%;
+display: flex;
+justify-content: center;
 }
 
 .textContainer{
-  width: 100%;
-  height: 100%;
-  padding: 0.5em;
+width: 100%;
+height: 100%;
+padding: 0.5em;
 }
 
 .textContainer p{
-  display: flex;
-  align-items: start;
-  height: 100%;
-  width: 100%;
-  font-size: 1.5em;
-  text-align: center;  
-  font-family: Georgia, 'Times New Roman', Times, serif;
+display: flex;
+align-items: start;
+height: 100%;
+width: 100%;
+font-size: 1.5em;
+text-align: center;  
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /*fim beneficios*/
 
 #products{
-  width: 100vw;
-  height: 38vw;
-  max-width: 100%;
-  display: flex;
-  justify-content:center;
-  align-items: center;
+width: 100vw;
+height: 38vw;
+max-width: 100%;
+display: flex;
+justify-content:center;
+align-items: center;
 }
 
 .carrossel{
-  width:85vw;
-  height: 100%;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  align-items: center;
-  margin-left: 1.5em ;
+width:85vw;
+height: 100%;
+position: relative;
+display: flex;
+justify-content: space-between;
+overflow: hidden;
+align-items: center;
+margin-left: 1.5em ;
 }
 
 .leftBtn, .rigthBtn{ 
-  
-  color: rgb(0, 0, 0);
-  width: 5%;
-  height: 50%;
-  font-size: 5em;
-  z-index: 3;
-  display: flex;
-  align-items:start;
+
+color: rgb(0, 0, 0);
+width: 5%;
+height: 50%;
+font-size: 5em;
+z-index: 3;
+display: flex;
+align-items: center;
 }
 
 
 .leftBtn{
-  left: -20px;
-  display: flex;
-  justify-content: end;
-  position: absolute;
+left: -20px;
+display: flex;
+justify-content: end;
+position: absolute;
 }
 .rigthBtn{
-  right: -20px;
-  display: flex;
-  justify-content: start;
-  position: absolute;
+right: -20px;
+display: flex;
+justify-content: start;
+position: absolute;
 }
 
 .containerCarrossel{
-  transition: 2ms;
-  width: 100%;
-  margin: 0.8em;
-  height: 80%;
-  position: relative;
+transition: 2ms;
+width: 100%;
+margin: 0.8em;
+height: 80%;
+position: relative;
 }
 
 .containerProduct{
-  margin: 0 3em 0 0;
-  width: 17.5vw;
-  height: 60vh;
-  text-align: center;
-  background-color:#8B0019;
-  border-radius: 0.8em;
+padding: 1EM;
+margin: 0 3em 0 0;
+width: 17.5vw;
+height: 100%;
+text-align: center;
+background-color:#8B0019;
+border-radius: 1em;
 }
 
 .containerFoto{
-  width: 100%;
-  height: 40%;
-  
+width: 100%;
+height: 40%;
+
 }
 
 .containerFoto img{
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5em;
-  border: 1px solid black;
+width: 100%;
+height: 100%;
+border-radius: 0.5em;
+border: 1px solid black;
 }
 
 .sobreProduct{
-  width: 100%;
-  height: 60%;
-  border-radius: 0.5em;
+width: 100%;
+height: 60%;
+border-radius: 0.5em;
 }
 .titleProduto{
-  height: 35%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.8em;
-  font-family:fantasy;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.342);
-  color: white;
+height: 35%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.8em;
+font-family:fantasy;
+border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+color: white;
 }
 
 .valor{
-  height: 35%;
-  width: 100%;
-  font-family:fantasy;
-  font-size: 2.5em;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  color: rgb(60, 190, 60);
+height:20%;
+font-family:fantasy;
+font-size: 2.5em;
+align-items: center;
+text-align: center;
+display: flex;
+color: rgb(60, 190, 60);
 }
 
 .valor p{
-  width: 100%;
+width: 100%;
+height: 100%;
+text-align: center;
 }
 
 
 .buttonComprar{
-  height: 30%;
-  width: 100%; 
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
- 
+height: 30%;
+width: 100%; 
+display: flex;
+justify-content: center;
+align-items: flex-start;
 }
 
 .comprar{
-  border-radius: 1em;
-  width: 80%;
-  height: 70%;
-  font-family: fantasy;
-  border: none;
-  background-color:#88586131;
-  font-size: 2em;
-  color: #ffffff;
-  cursor: pointer;
+border-radius: 1em;
+width: 80%;
+height: 50%;
+font-size: 0.5EM;
+font-family: fantasy;
+border: none;
+background-color:#88586131;
+font-size: 2em;
+color: #ffffff;
+cursor: pointer;
 }
 
 
 #atleta{
-  width: 100vw;
-  height: 75vh;
-  margin: 3em 1em; 
-  }
+width: 100vw;
+height: 75vh;
+margin: 3em 1em; 
+}
 
 .titleAtleta{
-  font-size: 3em;
-  height: 15%;
-  margin: 0 0 1em 0;
-  display: flex;
-  justify-content: center;
-  color: #8B0019;
-  
+font-size: 3em;
+height: 15%;
+margin: 0 0 1em 0;
+display: flex;
+justify-content: center;
+color: #8B0019;
+
 }
 
 .videoAbout{
-  width: 100%;
-  height: 90%;
-  display: flex;
-  justify-content: space-evenly;
+width: 100%;
+height: 90%;
+display: flex;
+justify-content: space-evenly;
 }
 
 video{
-  padding: 1em;
-  width: 45%;
-  height: 90%;
+padding: 1em;
+width: 45%;
+height: 90%;
 }
 .sobreAtleta{
-  width: 45%;
+width: 45%;
 
-  height: 100%;
+height: 100%;
 }
 
 .nome{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 20%;
-  font-size: 2em;
-  color: #8B0019;
+display: flex;
+justify-content: center;
+width: 100%;
+height: 20%;
+font-size: 2em;
+color: #8B0019;
 }
 
 .desc{
-  padding: 0.8em;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 70%;
-  text-align:center;
+padding: 0.8em;
+display: flex;
+justify-content: center;
+width: 100%;
+height: 70%;
+text-align:center;
 }
 
 .desc p{
-  font-size: 2.5em;
+font-size: 2.5em;
 }
 
 #sktmetal{
-  color: #8B0019;
+color: #8B0019;
 }
 /*article*/
 #contact{
-  margin: 1em 0.5em;
-  width: 100%;
-  height: 60vh;  
-  display: flex;
-  justify-content: space-around;
+margin: 1em 0.5em;
+width: 100%;
+height: 60vh;  
+display: flex;
+justify-content: space-around;
 }
 
 .containerAbout{
-  width: 50%;
-  height: 100%;
+width: 50%;
+height: 100%;
 }
 
 .aboutName{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 30%;
-  font-size: 3em;
-  align-items: center;
+width: 100%;
+display: flex;
+justify-content: center;
+height: 30%;
+font-size: 3em;
+align-items: center;
 }
 .containerText{
-  width: 60%;
-  padding: 0.2em;
-  font-size: 2.5em;
-  width: 100%;
+width: 60%;
+padding: 0.2em;
+font-size: 2.5em;
+width: 100%;
+}
+#email{
+width: 50%;
+padding: 1EM;
+height: 100%;
+}
+.titleForm{
+height: 30%;
+display: flex;
+justify-content: center;
+padding: 1.5em;
+width: 100%;
+}
+.titleForm H2{
+
+font-size: 3.5em;
+}
+.contact-form {
+width: 90%;
+margin: auto;
+background-color: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+input, textarea {
+width: 100%;
+border: none;
+padding: 0.8em;
+margin: 0.7em 0;
+box-sizing: border-box;
+background-color: #f8f8f8;
+border-radius: 4px;
+}
+
+.btnContact{
+width: 100%;
+display: flex;
+justify-content: center;
+}
+button {
+padding: 0.7em 1.2em;
+margin: 0.7em 0;
+background-color: #008CBA;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+button:hover {
+background-color: #007B9A;
 }
 
 /*fimarticle*/
@@ -514,72 +568,114 @@ video{
 
 /*footer*/
 footer{
-  width: 100vw;
-  height: 15vh;
-  display: flex;
-  justify-content: space-between;
-  background-color: #353434f6;
-  }
+width: 100vw;
+height: 15vh;
+display: flex;
+justify-content: space-between;
+background-color: #353434f6;
+}
 
 .socialMedia{
-  width: 30%;
-  height: 100%;
-  display: flex;
-  align-items: center;
+width: 30%;
+height: 100%;
+display: flex;
+align-items: center;
 }
 
 .socialMedia ul{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 0.4em;
-  justify-content: space-between;
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+padding: 0.4em;
+justify-content: space-between;
 }
 
 
 .socialMedia ul li, .manualUser ul li{
-  color: white;
-  font-size: 1.2em;
-  width: 100%;
+color: white;
+font-size: 1.2em;
+width: 100%;
 }
 
 .logoFooter{
-  display: flex;
-  align-items: center;
-  height: 100%;
+display: flex;
+align-items: center;
+height: 100%;
 }
 
 .logoFooter img{
-  width: 12vw;
-  height: 100%;
+width: 12vw;
+height: 100%;
 }
 .manualUser{
-  height: 100%;
-  width: 30%; 
+height: 100%;
+width: 30%; 
 
 }
 
 .manualUser ul {
-  width: 100%;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+color: #fff;
+align-items: end;
+justify-content: space-between;
+list-style: none;
+text-align: end;
+padding: 0.4em;
+padding-right:1.5em;
+}
+
+@media (min-width: 1720px){
+
+.linksNav{
+  margin: 0 1.5em;
+}
+.contentText{
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  align-items: end;
-  justify-content: space-between;
-  list-style: none;
-  text-align: end;
   padding: 0.4em;
-  padding-right:1.5em;
+}
+.contentText p{
+  font-size: 3em;
+}
+
+#sectionBeneficios{
+height: 60vh;
+} 
+.containerBeneficios{
+height: 100%;
+}
+
+}
+@media (min-width: 1490px) and (max-width: 1719px) {
+.contentText p{
+  font-size: 2.5em;
+
+}
+}
+@media (min-width: 1200px) and (max-width: 1489px) {
+.contentText p{
+  font-size: 2.2em;
+}X
+.carrossel{
+  height: 100%;
+}
+.buttonComprar{
+  align-items: start;
+}
+.containerCarrosseli{
+width: 100%;   
+}
 }
 
 /* Media query para telas menores que 600px (tipicamente telas de smartphones) */
 @media (max-width: 450px) {
-      
- .linksNav{
-  width: 100%;
- }
+    
+.linksNav{
+width: 100%;
+}
 }
 
 
